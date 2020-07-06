@@ -68,13 +68,14 @@ namespace Responsi
 
             Produk produk = new Produk();
             Console.WriteLine("Tambah Data Produk");
-            Console.WriteLine(" Kode Produk: ");
+            Console.WriteLine();
+            Console.Write("Kode Produk: ");
             produk.KodeProduk = Console.ReadLine();
-            Console.WriteLine("Nama Produk: ");
+            Console.Write("Nama Produk: ");
             produk.NamaProduk = Console.ReadLine();
-            Console.WriteLine("Harga Beli Produk: ");
+            Console.Write("Harga Beli Produk: ");
             produk.HargaBeli = int.Parse(Console.ReadLine());
-            Console.WriteLine("Harga Jual Produk: ");
+            Console.Write("Harga Jual Produk: ");
             produk.HargaJual = int.Parse(Console.ReadLine());
 
             Console.WriteLine("\nTekan ENTER untuk kembali ke menu");
@@ -86,8 +87,8 @@ namespace Responsi
             Console.Clear();
 
             int nomor = -1, hapus = -1;
-            Console.WriteLine("Hapusd Data Produk: ");
-            Console.WriteLine("Kode Produk: ");
+            Console.Write("Hapus Data Produk: ");
+            Console.Write("Kode Produk: ");
             string code = Console.ReadLine();
             foreach (Produk produk in daftarProduk)
             {
