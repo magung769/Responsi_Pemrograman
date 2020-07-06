@@ -118,19 +118,19 @@ namespace Responsi
         {
             Console.Clear();
 
-            
-            int noUrut = 0;
+            int Urut = 0;
             Console.WriteLine("Data Produk");
             foreach (Produk produk in daftarProduk)
             {
-                noUrut++;
-                Console.WriteLine("{0}. Kode Produk: {1}, Nama Produk: {2}, Harga Beli Produk: {3:}, Harga Jual Produk: {4}", noUrut, produk.KodeProduk, produk.NamaProduk, produk.HargaBeli, produk.HargaJual);
+                
+                Console.WriteLine("{0}. Kode Produk: {1}, Nama Produk: {2}, Harga Beli Produk: {3:}, Harga Jual Produk: {4}", Urut, produk.KodeProduk, produk.NamaProduk, produk.HargaBeli, produk.HargaJual);
+                Urut++;
             }
 
-            if (noUrut < 1)
+            /*if (Urut < 1)
             {
                 Console.WriteLine("Data Produk Kosong");
-            }
+            }*/
 
             Console.WriteLine("\nTekan enter untuk kembali ke menu");
             Console.ReadKey();
