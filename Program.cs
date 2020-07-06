@@ -107,7 +107,7 @@ namespace Responsi
 
             else
             {
-                Console.WriteLine("\nKode Produk dapat dihapus");
+                Console.WriteLine("\nKode Produk tidak dapat ditemukan");
             }
 
             Console.WriteLine("\nTekan ENTER untuk kembali ke menu");
