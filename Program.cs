@@ -66,6 +66,7 @@ namespace Responsi
         {
             Console.Clear();
 
+
             Produk produk = new Produk();
             Console.WriteLine("Tambah Data Produk");
             Console.WriteLine();
@@ -77,6 +78,9 @@ namespace Responsi
             produk.HargaBeli = int.Parse(Console.ReadLine());
             Console.Write("Harga Jual Produk: ");
             produk.HargaJual = int.Parse(Console.ReadLine());
+
+            daftarProduk.Add(produk);
+            Console.WriteLine();
 
             Console.WriteLine("\nTekan ENTER untuk kembali ke menu");
             Console.ReadKey();
@@ -123,14 +127,13 @@ namespace Responsi
             foreach (Produk produk in daftarProduk)
             {
                 
-                Console.WriteLine("{0}. Kode Produk: {1}, Nama Produk: {2}, Harga Beli Produk: {3:}, Harga Jual Produk: {4}", Urut, produk.KodeProduk, produk.NamaProduk, produk.HargaBeli, produk.HargaJual);
+                Console.WriteLine("{0}. Kode Produk: {1}, Nama Produk: {2}, Harga Beli: {3}, Harga Jual: {4}", Urut, produk.KodeProduk, produk.NamaProduk, produk.HargaBeli, produk.HargaJual);
                 Urut++;
             }
-
-            /*if (Urut < 1)
+            if (Urut < 1)
             {
                 Console.WriteLine("Data Produk Kosong");
-            }*/
+            }
 
             Console.WriteLine("\nTekan enter untuk kembali ke menu");
             Console.ReadKey();
